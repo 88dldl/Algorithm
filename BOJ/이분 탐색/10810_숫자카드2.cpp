@@ -8,7 +8,7 @@ int main()
     cin.tie(NULL); ios::sync_with_stdio(false);
     int n, m, tmp;
     vector <int> number;
-    //�Է�
+    //ÀÔ·Â
     cin >> n;
     for (int i = 0; i < n; i++) {
         cin >> tmp;
