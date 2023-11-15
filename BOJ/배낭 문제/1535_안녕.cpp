@@ -8,6 +8,7 @@ int main()
     int n;
     int loss[21],get[21],dp[21][101];
     cin>>n;
+    
     for(int i=1;i<=n;i++){
         cin>>loss[i];
     }
