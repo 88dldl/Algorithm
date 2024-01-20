@@ -1,3 +1,5 @@
-# Algorithm
+# Algorithm Study
 
-하루에 따악,,, 한문제만 풀자
+### 사이트
+1. [BOJ](https://www.acmicpc.net/)
+2. [SW Expert](https://swexpertacademy.com/main/main.do)
