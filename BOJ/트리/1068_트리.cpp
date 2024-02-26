@@ -1,12 +1,10 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <queue>
 using namespace std;
 
 int n,d,root,leafsum=0;
 vector<int> tree[50];
-queue<int> q;
 bool check[50];
 
 void solve(int curnode)
