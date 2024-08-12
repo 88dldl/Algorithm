@@ -5,11 +5,13 @@ int r,c,count=0;
 char map[10001][501];
 int dx[3] = {1,1,1};
 int dy[3] = {-1, 0, 1};
+bool check;
 
-bool solve(int y,int x){ 
+void solve(int y,int x){ 
     if(x == c-1){
+        check = true;
         count++;
-        return true;
+        return;
     } 
     
     map[y][x]='x';
@@ -18,9 +20,9 @@ bool solve(int y,int x){
         int tmpy = dy[i]+y;
         int tmpx = dx[i]+x;
         if(tmpx<0 || tmpx>=c || tmpy<0 || tmpy>=r || map[tmpy][tmpx]=='x') continue;
-        if(solve(tmpy,tmpx)) return true;
+        solve(tmpy,tmpx);
+        if(check) return;
     }
-    return false;
 }
 
 int main()
@@ -36,6 +38,7 @@ int main()
         }
     }
     for(int i=0;i<r;i++){
+        check = false;
         solve(i,0);
     }
 
