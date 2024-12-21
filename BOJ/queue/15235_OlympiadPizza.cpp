@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 #include <queue>
 using namespace std;
 
@@ -35,7 +34,7 @@ int main()
     solve();
     
     for(int i=1;i<=n;i++){
-        printf("%d ",visit[i]);
+        cout<<visit[i]<<" ";
     }
     return 0;
 }
